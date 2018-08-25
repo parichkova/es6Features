@@ -31,3 +31,9 @@ function commentsByPost(comments, post) {
 let commentsAssoc = commentsByPost(comments, post);
 console.log(commentsAssoc);
 
+// if I have an array of numbers and I want to return those that are not matching a criteria
+function reject(array, iteratorFunction) {
+    return  array.filter((num)=> {
+        return !iteratorFunction(num);
+    })
+}
