@@ -1,0 +1,13 @@
+
+//you want to change the name of calculatePorduct, but you will make issues in user's code
+//this is the solution
+//adding new method multiply and call it inside calculatePorduct
+
+const MathLibrary = {
+    calculateProduct(...rest) {
+        return this.multiply(...rest);
+    },
+    multiply(a,b) {
+        return a*b;
+    }
+}
