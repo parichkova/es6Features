@@ -65,3 +65,7 @@ function unique(array) {
       return previous;
     }, []);
   }
+
+[2,2,3,4,5,8,8,9].reduce((arr, el) => {
+	return arr.includes(el) ? arr : [...arr,el]
+}, [])
