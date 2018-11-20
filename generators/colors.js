@@ -4,5 +4,6 @@ function* colors() {
     yield 'green';
 }
 
-const gen = colors();
-gen.next();
+for (let color of colors()) {
+    console.log(color);
+}
